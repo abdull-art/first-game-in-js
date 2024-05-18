@@ -49,10 +49,7 @@ const result = () => {
       "display-result"
     ).innerText = `You loose: (System selected ${pcChoice})`;
   } else if (
-    (userValue === "rock" && pcChoice === "rock") ||
-    (userValue === "scissor" && pcChoice === "scissor") ||
-    (userValue === "paper" && pcChoice === "paper")
-  ) {
+    (userValue === pcChoice)) {
     document.getElementById(
       "display-result"
     ).innerText = `It's a Draw: (System also selected ${pcChoice})`;
